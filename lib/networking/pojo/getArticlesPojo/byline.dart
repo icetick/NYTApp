@@ -1,4 +1,4 @@
-import 'package:NYT/pojo/getArticlesPojo/person.dart';
+import 'package:NYT/networking/pojo/getArticlesPojo/person.dart';
 
 class Byline {
   String original;

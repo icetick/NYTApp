@@ -1,4 +1,4 @@
-import 'package:NYT/pojo/getArticlesPojo/NYTResponse.dart';
+import 'package:NYT/networking/pojo/getArticlesPojo/NYTResponse.dart';
 
 class ArticlesResponse {
   final String copyright;

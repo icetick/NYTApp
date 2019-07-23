@@ -1,7 +1,7 @@
-import 'package:NYT/pojo/getArticlesPojo/byline.dart';
-import 'package:NYT/pojo/getArticlesPojo/headline.dart';
-import 'package:NYT/pojo/getArticlesPojo/keywords.dart';
-import 'package:NYT/pojo/getArticlesPojo/multimedia.dart';
+import 'package:NYT/networking/pojo/getArticlesPojo/byline.dart';
+import 'package:NYT/networking/pojo/getArticlesPojo/headline.dart';
+import 'package:NYT/networking/pojo/getArticlesPojo/keywords.dart';
+import 'package:NYT/networking/pojo/getArticlesPojo/multimedia.dart';
 
 class ArticleNYT {
   String webUrl;

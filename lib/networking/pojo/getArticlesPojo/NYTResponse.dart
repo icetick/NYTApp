@@ -1,4 +1,4 @@
-import 'package:NYT/pojo/getArticlesPojo/articleNYT.dart';
+import 'package:NYT/networking/pojo/getArticlesPojo/articleNYT.dart';
 
 class NYTResponse {
   final List<ArticleNYT> articles;
