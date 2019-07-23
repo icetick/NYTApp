@@ -1,4 +1,4 @@
-import 'package:NYT/pojo/getArticlesPojo/legacy.dart';
+import 'package:NYT/networking/pojo/getArticlesPojo/legacy.dart';
 
 class Multimedia {
   int rank;

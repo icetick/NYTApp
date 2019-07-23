@@ -1,17 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:NYT/mainPage.dart';
 
-void main() => runApp(MyApp());
+import 'networking/networkManager.dart';
 
-class MyApp extends StatelessWidget {
+void main() => runApp(App());
+
+class App extends StatelessWidget {
+  final NetworkManager manager = NetworkManager();
+
   @override
   Widget build(BuildContext context) {
+
     return MaterialApp(
       title: 'NYT',
       theme: ThemeData(
         primaryColor: Colors.white,
       ),
-      home: MainPage(),
+      home: MainPage(manager: manager),
     );
   }
 }
