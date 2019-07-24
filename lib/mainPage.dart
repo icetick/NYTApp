@@ -82,7 +82,7 @@ class _MainPageState extends State<MainPage>
           future: post,
           builder: (context, snapshot) {
             if (snapshot.hasData) {
-              if (!(_searchText.isEmpty)) {
+              if (_searchText.isNotEmpty) {
                 List tempList = new List<ArticleNYT>();
                 filteredList = snapshot.data.response.articles;
                 for (int i = 0; i < filteredList.length; i++) {
@@ -113,7 +113,7 @@ class _MainPageState extends State<MainPage>
                                 padding: const EdgeInsets.fromLTRB(
                                     12.0, 12.0, 12.0, 6.0),
                                 child: Text(
-                                  (filteredList == null || filteredList[position]==null || filteredList[position].snippet==null)
+                                  (filteredList == null || filteredList.isEmpty || filteredList[position]==null || filteredList[position].snippet==null)
                                       ? snapshot.data.response
                                           .articles[position].snippet
                                       : filteredList[position].snippet,
@@ -127,7 +127,7 @@ class _MainPageState extends State<MainPage>
                                 padding: const EdgeInsets.fromLTRB(
                                     12.0, 6.0, 12.0, 12.0),
                                 child: Text(
-                                  (filteredList == null || filteredList[position]==null || filteredList[position].pubDate==null)
+                                  (filteredList == null || filteredList.isEmpty || filteredList[position]==null || filteredList[position].pubDate==null)
                                       ? DateTime.parse(snapshot.data.response
                                               .articles[position].pubDate)
                                           .toLocal()
